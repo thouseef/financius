@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright (C) 2015 Mantas Varnagiris.
+  ~ Copyright (C) 2016 Mantas Varnagiris.
   ~
   ~ This program is free software; you can redistribute it and/or modify
   ~ it under the terms of the GNU General Public License as published by
@@ -14,26 +14,22 @@
 
 <resources>
     <declare-styleable name="Theme">
+        <attr name="themeInverse" format="reference" />
         <attr name="colorPrimaryLight" format="color" />
+        <attr name="colorAccentLight" format="color" />
         <attr name="colorAccentDark" format="color" />
         <attr name="colorActionIcon" format="color" />
         <attr name="colorDivider" format="color" />
-        <attr name="backgroundPrimary" format="color" />
-        <attr name="floatingActionButtonStyle" format="reference" />
+        <attr name="colorExpense" format="color" />
+        <attr name="colorIncome" format="color" />
+        <attr name="colorBackgroundPrimary" format="color" />
+        <attr name="colorBackgroundSecondary" format="color" />
+        <attr name="colorOverlay" format="color" />
     </declare-styleable>
 
-    <declare-styleable name="FloatingActionButton">
-        <attr name="android:src" />
-        <attr name="android:tint" />
-    </declare-styleable>
-
-    <declare-styleable name="AspectLayout">
-        <attr name="aspectBase" format="enum">
-            <enum name="width" value="0" />
-            <enum name="height" value="1" />
-            <enum name="smallest" value="2" />
-            <enum name="biggest" value="3" />
-        </attr>
-        <attr name="aspect" format="float" />
+    <declare-styleable name="QuickTagsView">
+        <attr name="tagCornerRadius" format="dimension" />
+        <attr name="tagPaddingHorizontal" format="dimension" />
+        <attr name="tagPaddingVertical" format="dimension" />
     </declare-styleable>
 </resources>

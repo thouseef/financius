@@ -1,0 +1,32 @@
+<!--
+  ~ Copyright (C) 2015 Mantas Varnagiris.
+  ~
+  ~ This program is free software; you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation; either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  -->
+
+<resources>
+    <string name="calculator_0" translatable="false">0</string>
+    <string name="calculator_1" translatable="false">1</string>
+    <string name="calculator_2" translatable="false">2</string>
+    <string name="calculator_3" translatable="false">3</string>
+    <string name="calculator_4" translatable="false">4</string>
+    <string name="calculator_5" translatable="false">5</string>
+    <string name="calculator_6" translatable="false">6</string>
+    <string name="calculator_7" translatable="false">7</string>
+    <string name="calculator_8" translatable="false">8</string>
+    <string name="calculator_9" translatable="false">9</string>
+    <string name="calculator_decimal" translatable="false">.</string>
+    <string name="calculator_equals" translatable="false">=</string>
+    <string name="calculator_plus" translatable="false">+</string>
+    <string name="calculator_minus" translatable="false">-</string>
+    <string name="calculator_divide" translatable="false">÷</string>
+    <string name="calculator_multiply" translatable="false">×</string>
+</resources>

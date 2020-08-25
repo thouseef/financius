@@ -1,6 +1,7 @@
 .gradle
 /local.properties
-/financius.properties
+/private.properties
+/expensius.properties
 /.idea/*
 !/.idea/copyright
 !/.idea/codeStyleSettings.xml
@@ -8,3 +9,4 @@
 /build
 /captures
 *.iml
+/app/google-services.json

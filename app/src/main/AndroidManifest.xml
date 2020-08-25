@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright (C) 2015 Mantas Varnagiris.
+  ~ Copyright (C) 2017 Mantas Varnagiris.
   ~
   ~ This program is free software; you can redistribute it and/or modify
   ~ it under the terms of the GNU General Public License as published by
@@ -11,61 +11,63 @@
   ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   ~ GNU General Public License for more details.
   -->
-<manifest
-    package="com.mvcoding.financius"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mvcoding.expensius">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-
-    <permission
-        android:name="com.example.gcm.permission.C2D_MESSAGE"
-        android:protectionLevel="signature" />
-
-    <uses-permission android:name="com.example.gcm.permission.C2D_MESSAGE" />
 
     <application
         android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppThemeLight">
-
-        <!-- Activities -->
-        <!-- =========================================================================================================================== -->
-
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.splash.SplashActivity"
-            android:label="@string/app_name">
+            android:name=".feature.splash.SplashActivity"
+            android:theme="@style/AppTheme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
         </activity>
+        <activity android:name=".feature.login.LoginActivity" />
+        <activity android:name=".feature.overview.OverviewActivity" />
         <activity
-            android:name=".ui.introduction.IntroductionActivity"
-            android:label="@string/introduction"
-            android:theme="@style/AppThemeDark" />
+            android:name=".feature.tag.TagsActivity"
+            android:label="@string/tags" />
         <activity
-            android:name=".ui.user.LoginActivity"
-            android:label="@string/log_in" />
+            android:name=".feature.tag.TagActivity"
+            android:label="@string/tag" />
         <activity
-            android:name=".ui.overview.OverviewActivity"
-            android:label="@string/overview" />
-        <activity
-            android:name=".ui.transaction.calculator.CalculatorActivity"
+            android:name=".feature.calculator.CalculatorActivity"
             android:label="@string/calculator" />
-
-        <!-- Meta data -->
-        <!-- =========================================================================================================================== -->
+        <activity
+            android:name=".feature.transaction.TransactionsActivity"
+            android:label="@string/transactions" />
+        <activity
+            android:name=".feature.transaction.TransactionActivity"
+            android:label="@string/transaction" />
+        <activity
+            android:name=".feature.premium.PremiumActivity"
+            android:label="@string/support_developer" />
+        <activity
+            android:name=".feature.settings.SettingsActivity"
+            android:label="@string/settings" />
+        <activity
+            android:name=".feature.reports.tags.TagsReportActivity"
+            android:label="@string/tags_report" />
+        <activity
+            android:name=".feature.reports.trends.TrendsReportActivity"
+            android:label="@string/trends_report" />
 
         <meta-data
-            android:name="com.crashlytics.ApiKey"
-            android:value="a0fed0de33f7f506e0acd0e0eb605f9f3a3da96f" />
-
+            android:name="io.fabric.ApiKey"
+            android:value="${crashlytics}" />
     </application>
 
 </manifest>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2015 Mantas Varnagiris.
+  ~
+  ~ This program is free software; you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation; either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  -->
+
+<com.mvcoding.expensius.feature.tag.TagItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RecyclerViewItem">
+
+    <ImageView
+        android:id="@+id/colorImageView"
+        android:layout_width="@dimen/keyline_content_minus_keyline_3x"
+        android:layout_height="@dimen/keyline_content_minus_keyline_3x"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/keyline_2x"
+        android:contentDescription="@string/color"
+        android:elevation="@dimen/elevation_card"
+        android:src="@drawable/oval"
+        tools:ignore="UnusedAttribute"
+        tools:tint="#ffcc00" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textAppearance="@style/Text.Tag"
+        tools:text="Essential" />
+
+</com.mvcoding.expensius.feature.tag.TagItemView>
